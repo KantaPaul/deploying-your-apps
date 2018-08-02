@@ -39,7 +39,9 @@
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:pord": "webpack -p --env production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:pord"
   },
   "repository": {
     "type": "git",
